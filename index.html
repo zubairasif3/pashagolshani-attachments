@@ -103,14 +103,11 @@
     <script>
         function slider() {
             $(".slide-track").each(function(){
-                console.log($(this));
                 var length = $($(this).find(".slide")).lendth;
                 var html = $(this).html();
                 $(this).append(html);
-                console.log(html);
                 $(this).append(html); 
                 setInterval(() => {
-                    console.log(21312321);
                     $(this).append(html);    
                 }, 6000);
             })
