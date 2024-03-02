@@ -239,6 +239,45 @@
                 transform: translateX(0);
             }
         }
+        @media screen and (max-width: 767px) {
+            .slider .slide {
+                width: 260px;
+                margin-right: 10px;
+            }
+            .slider .slide-track {
+                width: 260px;
+            }
+            .slider .slide img {
+                height: 250px;
+            }
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-260px * 10));
+                }
+            }
+            @keyframes scrollright {
+                0% {
+                    transform: translateX(calc(-260px * 10));
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }
+            .rover-section {
+                text-align: center;
+            }
+            .rover-section .heading {
+                font-size: 54px;
+                line-height: 54px;
+                margin-bottom: 35px;
+            }
+            .rover-section .heading .top-bg{
+                padding: 15px;
+            }
+        }
     </style>
     <!-- Jquery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

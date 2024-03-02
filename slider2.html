@@ -173,6 +173,37 @@
                 transform: translateX(calc(-340px * 10));
             }
         }
+        @media screen and (max-width: 767px) {
+            .slider .slide {
+                width: 260px;
+                margin-right: 10px;
+            }
+            .slider .slide-track {
+                width: 260px;
+            }
+            .extended-section .slider .slide img {
+                height: 250px;
+            }
+            @keyframes extendedScroll {
+                0% {
+                    transform: translateX(0px);
+                }
+                100% {
+                    transform: translateX(calc(-260px * 10));
+                }
+            }
+            .extended-section {
+                text-align: center;
+            }
+            .extended-section .content {
+                font-size: 40px;
+                padding: 16px 0px 8px;
+            }
+            .extended-section .content .text {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
     </style>
     <!-- Jquery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
